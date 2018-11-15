@@ -1,3 +1,7 @@
+Some problems may occur when installing onto ec2 and scrapy. Use the following command first to install scrapy on virtual env:
+sudo yum install gcc libffi-devel python-devel openssl-devel
+pip install Scrapy
+
 Scrapy web spider to crawl a website and pull out any DIV containers, + page title. 
 
 spider.py included the config
