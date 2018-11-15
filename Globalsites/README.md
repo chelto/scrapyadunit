@@ -18,6 +18,6 @@ domain urls and start url is setup as an input
 
 
 Commands to use:
-scrapy crawl globalWebsiteSites -o outputfile.json
+scrapy runspider spider.py -o outputfile.json
 
-scrapy crawl globalWebsiteSites -o outputfile.csv
+scrapy runspider spider.py -o outputfile.csv
