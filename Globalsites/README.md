@@ -4,8 +4,9 @@ pip install Scrapy
 
 Scrapy web spider to crawl a website and pull out any DIV containers, + page title. 
 
+
 spider.py included the config
-This has been setup to look for class ids on the page:
+This has been setup to look for the following class ids on the page:
 
 'url': response.url,
 'title of page': title.css('title::text').extract_first(),
@@ -14,10 +15,10 @@ This has been setup to look for class ids on the page:
 'Banner adid': title.xpath('//div[@class="dac__banner"]').extract_first(),
 'Overlay adid': title.xpath('//div[@class="dac__overlay"]').extract_first(),
 
-domain urls and start url is setup as an input
 
 
-Commands to use:
-scrapy runspider spider.py -o outputfile.json
 
-scrapy runspider spider.py -o outputfile.csv
+Commands line code to use:
+scrapy crawl scrapyadunit
+
+
